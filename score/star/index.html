@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>星星评分移动端</title>
+    <style>
+        .star li {
+            display: inline;
+            list-style: none
+        }
+
+        .star img {
+            width: 10vw;
+        }
+
+        #score {
+            color: #888
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="star">
+        <li data-star="1">
+            <img src="./WechatIMG25.png" />
+        </li>
+        <li data-star="2">
+            <img src="./WechatIMG25.png" />
+        </li>
+        <li data-star="3">
+            <img src="./WechatIMG25.png" />
+        </li>
+        <li data-star="4">
+            <img src="./WechatIMG25.png" />
+        </li>
+        <li data-star="5">
+            <img src="./WechatIMG25.png" />
+        </li>
+    </ul>
+    <p id="score"></p>
+    <script>
+        // 默认值为 starvalue
+        var starvalue = 3;
+
+        !(() => {
+            let starList = document.getElementsByClassName("star")[0].getElementsByTagName("li");
+
+            function init(value) {
+                for (let item of starList) {
+                    item.getElementsByTagName("img")[0].src = (item.dataset.star > value ?
+                        "./WechatIMG26.png" :
+                        "./WechatIMG25.png")
+                }
+                document.getElementById("score").innerHTML = `评分：${starvalue}`
+            }
+            init(starvalue);
+
+            for (let item of starList) {
+                item.addEventListener("click", () => {
+                    window.starvalue = item.dataset.star
+                    init(item.dataset.star)
+                })
+            }
+        })()
+    </script>
+</body>
+
+</html>

@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ComponentsUI</title>
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
         crossorigin="anonymous">
     <style>
         #home {
-            padding: 0 6vw;
+            padding: 1vh 0;
         }
-
+        .row:first-child{
+            margin-top: 0
+        }
         .row {
-            margin-top: 3.5vh
+            margin-top: 8.8vh
         }
 
         h5 {
@@ -27,7 +29,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h5>UI</h5>
+                <label>User Interface</label>
             </div>
             <div class="col-md-4 col-xs-12">
                 <div class="card" style="width: 18rem;">
@@ -35,7 +37,7 @@
                         <h5 class="card-title">星星评分</h5>
                         <h6 class="card-subtitle mb-2 text-muted">默认值与Get评分</h6>
                         <p class="card-text">
-                            <iframe src="./src/componentsHTML/star/index.html" frameborder="0" width="100%"></iframe>
+                            <iframe src="./src/componentsHTML/star/index.html" frameborder="0" width="100%" height="100"></iframe>
                         </p>
                     </div>
                 </div>
@@ -43,7 +45,7 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <h5>JS</h5>
+                <label>Javascript</label>
             </div>
             <div class="col-md-4 col-xs-12">
                 <div class="card" style="width: 18rem;">
@@ -52,9 +54,9 @@
                         <h6 class="card-subtitle mb-2 text-muted">让dom获取更容易</h6>
                         <p class="card-text">
                             <code>
-                                $("#root")<br/> 
-                                $(".content")[0]<br/> 
-                                $("section")[0]
+                                $("#root")
+                                <br/> $(".content")[0]
+                                <br/> $("section")[0]
                             </code>
                         </p>
                         <a href="src/componentsJS/easydom/easydom.js">源码链接</a>
@@ -75,11 +77,11 @@
             }
         })()
     </script>
-    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
         crossorigin="anonymous"></script>
 </body>
 

@@ -59,7 +59,8 @@
             init(starvalue);
 
             for (let item of starList) {
-                item.addEventListener("click", () => {
+                // fix:把click换成了mouseover,体验有待考究
+                item.addEventListener("mouseover", () => {
                     window.starvalue = item.dataset.star
                     init(item.dataset.star)
                 })

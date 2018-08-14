@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #content li {
+            display: none
+        }
+
+        #content li:target {
+            display: block
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <a href="#Nav1">tab-1</a>
+        <a href="#Nav2">tab-2</a>
+        <a href="#Nav3">tab-3</a>
+    </div>
+
+    <ul id="content">
+        <li id="Nav1">content1</li>
+        <li id="Nav2">content2</li>
+        <li id="Nav3">content3</li>
+    </ul>
+</body>
+
+</html>
